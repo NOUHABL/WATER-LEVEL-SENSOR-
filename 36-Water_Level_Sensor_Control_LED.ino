@@ -11,13 +11,13 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   value = analogRead(A0);
-  if(value <= 300)
+  if(value <= 250)
   {
     digitalWrite(13, 1); // Green
     digitalWrite(12, 0); // Yellow
     digitalWrite(11, 0); // Red
   }
-  else if(value <= 400)
+  else if(value <= 300)
   {
     digitalWrite(13, 0); // Green
     digitalWrite(12, 1); // Yellow
